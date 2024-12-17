@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://boxemag.com/wp-content/uploads/2024/05/poster-ufc-309.jpeg");
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
