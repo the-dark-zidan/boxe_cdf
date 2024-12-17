@@ -1,42 +1,210 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("https://boxemag.com/wp-content/uploads/2024/05/poster-ufc-309.jpeg");
-    color: white;
-}
+/* Style général */
+:root {
+    --primary-color: #1e90ff; /* Bleu vif */
+    --secondary-color: rgb(104, 91, 91);
+    --background-color: #f4f4f4; /* Gris clair */
+    --text-color: #333; /* Gris foncé */
+    --white-color: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-span {
-    color: red;
-}
+  .cours .cards h3  {
+    color: rgb(85, 87, 85);
+  }
 
-header {
+  .cours .card h3 span {
+    color: rgb(1, 151, 1);
+  }
+  
+  .cours .card h3 span {
+    color: rgb(1, 151, 1);
+  }
+  
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    
+    background-image: url(../image/fond-rideaux-noirs-scene_107791-20172.avif);
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Définit la hauteur de la section à 100% de la hauteur de la fenêtre */
+    width: 100%; /* S'assure que la section couvre toute la largeur */
+
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px); /* Flou d'arrière-plan */
+    color: var(--white-color);
+}
+  
+  header {
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
+    justify-content: center;
     gap: 20px;
-}
-
-nav ul li a {
-    color: white;
+  }
+  
+  header nav a {
+    color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
-}
+    padding: 5px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+  }
+  
+  .reseaux img {
+    width: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .reseaux img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Sections */
 
-.buttons {
-    display: flex;
-    gap: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: red;
+  .truc {
     color: white;
+  }
+
+  .truc p {
+    font-size: large;
+  }
+
+  section {
+    text-align: center;
+    margin-top: 10px; /* Éviter que le contenu soit caché sous le header fixe */
+    padding: 20px;
+  }
+
+  .about {
+    background-image: url("../image/");
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: white;
+    font-size: x-large;
+    height: 100vh; /* Définit la hauteur de la section à 100% de la hauteur de la fenêtre */
+    width: 100%; /* S'assure que la section couvre toute la largeur */
+}
+
+.about .container img {
+  width: 260px;
+  align-items: center;
+}
+
+  .cours .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background:rgb(112, 112, 112);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgb(153, 153, 153);
+    padding: 20px;
+    text-align: left;
+    flex: 1 1 calc(30% - 40px);
+    max-width: 300px;
+  }
+  
+  .card span {
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  .comp {
+    background: var(--white-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    flex: 1 1 calc(30% - 40px);
+    text-align: center;
+  }
+
+  .button {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .button a {
+    text-decoration: none;
+  }
+  
+  .button button {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button button:hover {
+    background-color: #45a049; /* Vert plus foncé */
+    transform: scale(1.05); /* Zoom léger */
+  }
+  
+  .button button:active {
+    background-color: #3e8e41; /* Vert encore plus foncé */
+    transform: scale(0.95); /* Réduction légère */
+  }
+  
+  .contact {
+    color: white;
+  }
+  
+  .contact a {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .contact a:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* Footer */
+  footer {
+    ba
+  }
+  
+  
