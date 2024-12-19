@@ -1,210 +1,278 @@
 /* Style général */
 :root {
-    --primary-color: #1e90ff; /* Bleu vif */
-    --secondary-color: rgb(104, 91, 91);
-    --background-color: #f4f4f4; /* Gris clair */
-    --text-color: #333; /* Gris foncé */
-    --white-color: #fff;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .cours .cards h3  {
-    color: rgb(85, 87, 85);
-  }
-
-  .cours .card h3 span {
-    color: rgb(1, 151, 1);
-  }
-  
-  .cours .card h3 span {
-    color: rgb(1, 151, 1);
-  }
-  
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    
-    background-image: url(../image/fond-rideaux-noirs-scene_107791-20172.avif);
-    background-size: cover; /* L'image couvre toute la page */
-    background-position: center; /* L'image est centrée */
-    background-attachment: fixed; /* L'image reste fixe lors du défilement */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    height: 100vh; /* Définit la hauteur de la section à 100% de la hauteur de la fenêtre */
-    width: 100%; /* S'assure que la section couvre toute la largeur */
-
-    color: var(--text-color);
-    line-height: 1.6;
-  }
-
-  header {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px); /* Flou d'arrière-plan */
-    color: var(--white-color);
-}
-  
-  header {
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  header h1 {
-    margin-bottom: 10px;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  header nav a {
-    color: var(--white-color);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  header nav a:hover {
-    background: var(--secondary-color);
-    color: var(--white-color);
-    border-radius: 5px;
-  }
-  
-  .reseaux img {
-    width: 20px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .reseaux img:hover {
-    transform: scale(1.2);
-  }
-  
-  /* Sections */
-
-  .truc {
-    color: white;
-  }
-
-  .truc p {
-    font-size: large;
-  }
-
-  section {
-    text-align: center;
-    margin-top: 10px; /* Éviter que le contenu soit caché sous le header fixe */
-    padding: 20px;
-  }
-
-  .about {
-    background-image: url("../image/");
-    background-size: cover; /* L'image couvre toute la page */
-    background-position: center; /* L'image est centrée */
-    background-attachment: fixed; /* L'image reste fixe lors du défilement */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    color: white;
-    font-size: x-large;
-    height: 100vh; /* Définit la hauteur de la section à 100% de la hauteur de la fenêtre */
-    width: 100%; /* S'assure que la section couvre toute la largeur */
+  --primary-color: #1e90ff; /* Bleu vif */
+  --secondary-color: rgb(104, 91, 91); /* Couleur secondaire */
+  --background-color: #f4f4f4; /* Gris clair */
+  --text-color: #0a0a0a; /* Gris foncé */
+  --white-color: #3634ca; /* Blanc */
 }
 
-.about .container img {
-  width: 260px;
+.cours .cards h3 {
+  color: rgb(49, 49, 49); /* Couleur par défaut du titre */
+}
+
+/* Modification de la couleur pour chaque cadran */
+.cours .card h3 span.green {
+  color: rgb(36, 189, 36); /* Vert pour le cadran vert */
+}
+
+.cours .card h3 span.black {
+  color: rgb(0, 0, 0); /* Noir pour le cadran noir */
+}
+
+.cours .card h3 span.blue {
+  color: rgb(6, 66, 247); /* Bleu royal pour le cadran bleu */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(../image/fond-rideaux-noirs-scene_107791-20172.avif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px); /* Flou d'arrière-plan */
+  color: var(--white-color);
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+}
+
+.reseaux img {
+  width: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.reseaux img:hover {
+  transform: scale(1.2);
+}
+
+/* Sections */
+.truc {
+  color: white;
+}
+
+.truc p {
+  font-size: large;
+}
+
+section {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.about {
+  background-image: url("../image/");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: x-large;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Aligner les éléments à gauche */
   align-items: center;
+  padding: 20px;
 }
 
-  .cours .cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    background:rgb(112, 112, 112);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgb(153, 153, 153);
-    padding: 20px;
-    text-align: left;
-    flex: 1 1 calc(30% - 40px);
-    max-width: 300px;
-  }
-  
-  .card span {
-    color: var(--secondary-color);
-    font-weight: bold;
-  }
+.about .container {
+  text-align: left;
+  max-width: 800px;
+  margin-left: 20px; /* Espacement à gauche du texte */
+}
 
-  .comp {
-    background: var(--white-color);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-    flex: 1 1 calc(30% - 40px);
-    text-align: center;
-  }
+.about video {
+  float: left; /* Aligner la vidéo à gauche */
+  margin-right: 20px; /* Ajouter un espace entre la vidéo et le texte */
+  max-width: 50%; /* Limiter la largeur de la vidéo à 50% de la section */
+  height: auto;
+}
 
-  .button {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .button a {
-    text-decoration: none;
-  }
-  
-  .button button {
-    background-color: #4CAF50; /* Vert */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .button button:hover {
-    background-color: #45a049; /* Vert plus foncé */
-    transform: scale(1.05); /* Zoom léger */
-  }
-  
-  .button button:active {
-    background-color: #3e8e41; /* Vert encore plus foncé */
-    transform: scale(0.95); /* Réduction légère */
-  }
-  
-  .contact {
-    color: white;
-  }
-  
-  .contact a {
-    background: var(--primary-color);
-    color: var(--white-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-  }
-  
-  .contact a:hover {
-    background: var(--secondary-color);
-  }
-  
-  /* Footer */
-  footer {
-    ba
-  }
-  
-  
+.about p {
+  font-family: 'Lora', serif; /* Choisir une police élégante */
+  font-size: 20px; /* Augmenter la taille du texte */
+  line-height: 1.8; /* Espacement entre les lignes pour une meilleure lisibilité */
+  color: white; /* Assurer que le texte soit visible sur fond sombre */
+  text-align: left; /* Alignement du texte à gauche */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cours .cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgb(112, 112, 112);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgb(153, 153, 153);
+  padding: 20px;
+  text-align: left;
+  flex: 1 1 calc(30% - 40px);
+  max-width: 300px;
+}
+
+.card span {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.comp {
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  flex: 1 1 calc(30% - 40px);
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button button {
+  background-color: #4CAF50; /* Vert */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button button:hover {
+  background-color: #45a049; /* Vert plus foncé */
+  transform: scale(1.05);
+}
+
+.button button:active {
+  background-color: #3e8e41; /* Vert encore plus foncé */
+  transform: scale(0.95);
+}
+
+.contact {
+  color: white;
+}
+
+.contact a {
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact a:hover {
+  background: var(--secondary-color);
+}
+
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #c53bc5, #353150 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(111, 34, 199, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:active,
+button:hover {
+  outline: 0;
+}
+
+button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+/* Texte amélioré pour la section .about */
+.about p {
+  font-family: 'Lora', serif; /* Choisissez une police élégante */
+  font-size: 20px; /* Augmentez la taille du texte */
+  line-height: 1.8; /* Augmentez l'espacement entre les lignes pour plus de lisibilité */
+  color: white; /* Assurez-vous que le texte est bien lisible sur fond sombre */
+  text-align: left; /* Aligner le texte à gauche pour plus de lisibilité */
+  margin-top: 20px; /* Ajoutez un peu d'espace au-dessus du texte */
+  margin-bottom: 20px; /* Ajoutez un peu d'espace en bas du texte */
+  padding-right: 15px; /* Donne un peu d'espace à droite du texte */
+  padding-left: 15px; /* Donne un peu d'espace à gauche du texte */
+}
