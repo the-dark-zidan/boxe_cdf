@@ -3,7 +3,7 @@ button {
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   border: 0;
   border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-shadow: rgba(80, 2, 170, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
   color: #ffffff;
   display: flex;
@@ -141,6 +141,7 @@ section {
   margin-top: 10px;
   padding: 20px;
 }
+
 
 .about {
   background-size: cover;
@@ -470,25 +471,25 @@ footer {
   }
 
   .header {
-    padding: 10px 20px; /* Réduit l'espace autour de l'en-tête */
+    padding: 10px 20px;
   }
 
   header nav {
-    flex-direction: column; /* Aligne les liens de navigation en colonne */
-    gap: 10px; /* Réduit l'espace entre les éléments du menu */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   header nav a {
-    padding: 10px; /* Augmente la zone de clic sur les liens */
+    padding: 10px; 
   }
 
   .page {
     width: 100%;
-    padding: 30px 20px; /* Ajuste le padding pour un affichage plus compact */
+    padding: 30px 20px; 
   }
 
   .page h1 {
-    font-size: 1.5em; /* Réduit la taille des titres */
+    font-size: 1.5em; 
   }
 
   .page p {
@@ -497,11 +498,11 @@ footer {
   }
 
   .mascotte {
-    display: none; /* Cache la mascotte sur les petits écrans */
+    display: none; 
   }
 
   .realistic-clock {
-    width: 250px; /* Réduit la taille de l'horloge pour les petits écrans */
+    width: 250px; 
     height: 250px;
   }
 }
@@ -509,7 +510,7 @@ footer {
 @media all and (max-width: 1024px) {
   header {
     display: flex;
-    flex-direction: row; /* Alignement horizontal de la navigation */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
@@ -532,11 +533,11 @@ footer {
   }
 
   .card {
-    flex: 1 1 calc(50% - 20px); /* Réduit la taille des cartes pour une meilleure organisation */
+    flex: 1 1 calc(50% - 20px); 
   }
 
   .realistic-clock {
-    width: 350px; /* Agrandit légèrement l'horloge sur les tablettes */
+    width: 350px; 
     height: 350px;
   }
 }
