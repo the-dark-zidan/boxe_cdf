@@ -88,7 +88,7 @@ header {
   color: var(--white-color);
   padding: 10px 0;
   text-align: center;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -129,7 +129,8 @@ header nav a:hover {
 }
 
 .truc {
-  color: white;
+  color: rgb(211, 0, 0);
+
 }
 
 .truc p {
@@ -187,6 +188,15 @@ section {
   flex-wrap: wrap;
 }
 
+.cours h2 {
+  color: #fff2f2;
+  font-size: 50px; 
+  font-weight: bold; 
+  box-shadow: 0 100px 100px rgb(2, 2, 2);
+  
+}
+
+
 .card {
   background: rgb(112, 112, 112);
   border-radius: 20px;
@@ -203,9 +213,9 @@ section {
 }
 
 .comp {
-  background: var(--white-color);
+  background: rgb(58, 55, 55);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 8px rgba(0, 38, 255, 0.1);
   padding: 20px;
   text-align: left;
   flex: 1 1 calc(30% - 40px);
@@ -269,17 +279,17 @@ section {
   --clr-alpha: rgba(78, 43, 43, 0.377);
   animation: spinner 1.6s infinite ease;
   transform-style: preserve-3d;
-  
-  position: fixed; /* Position fixe pour rester en haut à droite même lors du défilement */
-  top: 50px; /* Décalage du haut de la page */
-  right: 50px; /* Décalage du côté droit de la page */
-  z-index: 1000; /* S'assurer qu'il reste au-dessus des autres éléments */
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+  perspective: 1200px; /* Ajoutez une perspective pour stabiliser la 3D */
 }
 
 .spinner > div {
   background-color: var(--clr-alpha);
   height: 100%;
-  position: absolute;
+  position: absolute; /* Changez de fixed à absolute */
   width: 100%;
   border: 3.5px solid var(--clr);
 }
@@ -325,6 +335,7 @@ section {
     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }
+
 
 /* Horloge réaliste ajoutée sous la vidéo à droite */
 .realistic-clock {
@@ -440,4 +451,4 @@ section {
     transform: translateX(-50%) rotate(360deg);
   }
 }
-
+c
