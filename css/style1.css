@@ -45,10 +45,10 @@ button:active {
 }
 
 :root {
-  --primary-color: #1e90ff; 
-  --secondary-color: rgb(104, 91, 91); 
+  --primary-color: #000000; 
+  --secondary-color: rgb(49, 30, 187); 
   --background-color: #f4f4f4; 
-  --text-color: #0a0a0a; 
+  --text-color: #ffffff; 
   --white-color: #ffffff; 
 }
 
@@ -249,12 +249,12 @@ section {
 }
 
 .button button:active {
-  background-color: #4e0acc; 
+  background-color: #2e253e; 
   transform: scale(0.95);
 }
 
 .contact {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .contact a {
@@ -274,8 +274,8 @@ section {
 .spinner {
   width: 70.4px;
   height: 70.4px;
-  --clr: rgb(61, 17, 219);
-  --clr-alpha: rgba(78, 43, 43, 0.377);
+  --clr: rgb(44, 42, 42);
+  --clr-alpha: rgba(8, 3, 3, 0.377);
   animation: spinner 1.6s infinite ease;
   transform-style: preserve-3d;
   position: absolute;
@@ -339,8 +339,8 @@ section {
 
 .realistic-clock {
   position: absolute;
-  top: 180%; 
-  right: 155px; 
+  top: 130%; 
+  right: 90px; 
   width: 400px;
   height: 400px;
   margin: 0;
@@ -461,4 +461,82 @@ footer {
   padding: 1px;
   color: white;
   z-index: 1px; 
+}
+@media all and (max-width: 750px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 7% 6%;
+  }
+
+  .header {
+    padding: 10px 20px; /* Réduit l'espace autour de l'en-tête */
+  }
+
+  header nav {
+    flex-direction: column; /* Aligne les liens de navigation en colonne */
+    gap: 10px; /* Réduit l'espace entre les éléments du menu */
+  }
+
+  header nav a {
+    padding: 10px; /* Augmente la zone de clic sur les liens */
+  }
+
+  .page {
+    width: 100%;
+    padding: 30px 20px; /* Ajuste le padding pour un affichage plus compact */
+  }
+
+  .page h1 {
+    font-size: 1.5em; /* Réduit la taille des titres */
+  }
+
+  .page p {
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+  .mascotte {
+    display: none; /* Cache la mascotte sur les petits écrans */
+  }
+
+  .realistic-clock {
+    width: 250px; /* Réduit la taille de l'horloge pour les petits écrans */
+    height: 250px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row; /* Alignement horizontal de la navigation */
+    justify-content: space-between;
+  }
+
+  .header {
+    padding: 10px 30px;
+  }
+
+  .wrapper {
+    padding: 25px;
+  }
+
+  .wrapper h1 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .content-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Réduit la taille des cartes pour une meilleure organisation */
+  }
+
+  .realistic-clock {
+    width: 350px; /* Agrandit légèrement l'horloge sur les tablettes */
+    height: 350px;
+  }
 }

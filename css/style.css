@@ -144,3 +144,150 @@ footer {
   color: white;
   z-index: 1px; 
 }
+
+@media all and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+      padding: 7% 6%;
+  }
+
+  .header {
+      padding: 20px 100px;
+  }
+
+  header ul li {
+      text-align: center;
+      align-items: center;
+  }
+
+  .page {
+      width: 100%;
+      padding: 80px 20px;
+  }
+
+  .page h1 {
+      font-size: 40px;
+      padding: 10px;
+  }
+
+  .page p {
+      font-size: 20px;
+      font-weight: lighter;
+  }
+
+  .mascotte {
+      display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  header {
+      display: flex;
+  }
+
+  .mascotte {
+      display: none;
+  }
+
+  .wrapper{
+      padding: 25px;
+  }
+  
+  .wrapper h1{
+      font-size: 2.5em;
+      font-weight: 600;
+  }
+
+  .content-box{
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .cadre{
+      min-width: 300px;
+      margin: 10px auto;
+  }
+  
+}
+
+@media all and (max-width: 480px) { 
+  header {
+    flex-direction: column;
+    padding: 5% 4%;
+  }
+  
+  header h1 {
+    font-size: 1.2rem;
+  }
+  
+  header nav {
+    flex-direction: column;
+    gap: 5px; /
+  }
+  
+  .watch-section {
+    flex-direction: column; 
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .watch-section-1, .watch-section-2 {
+    flex-direction: column; 
+  }
+  
+  .watch-image {
+    width: 80%; 
+    margin: 10px 0;
+  }
+  
+  .text-content {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .about {
+    padding: 10px; 
+    margin-top: 40px;
+  }
+  
+  .about h2 {
+    font-size: 1.2rem;
+  }
+  
+  .about p {
+    font-size: 0.9rem;
+  }
+  
+  footer {
+    padding: 5px 10px;
+  }
+  }
+  
+  @media all and (max-width: 768px) {
+  header {
+    padding: 6% 5%;
+  }
+  
+  .watch-section {
+    flex-direction: column; 
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .watch-image {
+    width: 90%; 
+    margin: 15px 0;
+  }
+  
+  .text-content {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .about {
+    padding: 15px; 
+    margin-top: 60px;
+  }
+  }
+  

@@ -43,4 +43,70 @@ a {
 
 a:hover 
 
+@media all and (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+      padding: 7% 6%;
+  }
+
+  .header {
+      padding: 20px 100px;
+  }
+
+  header ul li {
+      text-align: center;
+      align-items: center;
+  }
+
+  .page {
+      width: 100%;
+      padding: 80px 20px;
+  }
+
+  .page h1 {
+      font-size: 40px;
+      padding: 10px;
+  }
+
+  .page p {
+      font-size: 20px;
+      font-weight: lighter;
+  }
+
+  .mascotte {
+      display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  header {
+      display: flex;
+  }
+
+  .mascotte {
+      display: none;
+  }
+
+  .wrapper{
+      padding: 25px;
+  }
+  
+  .wrapper h1{
+      font-size: 2.5em;
+      font-weight: 600;
+  }
+
+  .content-box{
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .cadre{
+      min-width: 300px;
+      margin: 10px auto;
+  }
+  
+
+}
 
