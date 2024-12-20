@@ -1,4 +1,3 @@
-/* From Uiverse.io by cssbuttons-io */ 
 button {
   align-items: center;
   background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
@@ -271,7 +270,7 @@ section {
   background: var(--secondary-color);
 }
 
-/* Style du spinner ajouté */
+
 .spinner {
   width: 70.4px;
   height: 70.4px;
@@ -283,13 +282,13 @@ section {
   top: 50px;
   right: 50px;
   z-index: 1000;
-  perspective: 1200px; /* Ajoutez une perspective pour stabiliser la 3D */
+  perspective: 1200px; 
 }
 
 .spinner > div {
   background-color: var(--clr-alpha);
   height: 100%;
-  position: absolute; /* Changez de fixed à absolute */
+  position: absolute; 
   width: 100%;
   border: 3.5px solid var(--clr);
 }
@@ -337,11 +336,11 @@ section {
 }
 
 
-/* Horloge réaliste ajoutée sous la vidéo à droite */
+
 .realistic-clock {
   position: absolute;
-  top: 100%; /* Positionne l'horloge en dessous de la vidéo */
-  right: 55px; /* Place l'horloge à droite */
+  top: 100%; 
+  right: 55px; 
   width: 300px;
   height: 300px;
   margin: 0;
